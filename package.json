@@ -7,7 +7,7 @@
     "test": "npm run test-unit && npm run test-integration",
     "test-unit": "cross-env NODE_ENV=test ./node_modules/.bin/mocha -R good-mocha-html-reporter --timeout 10000 test/unit/*.test.js",
     "test-integration": "cross-env NODE_ENV=test ./node_modules/.bin/mocha -R good-mocha-html-reporter --timeout 10000 test/integration/*.test.js"
-  },
+  }, 
   "dependencies": {
     "bluebird": "^3.5.1",
     "body-parser": "^1.18.2",
