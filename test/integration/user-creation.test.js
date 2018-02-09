@@ -24,16 +24,16 @@ describe('user creation page', function () {
   });
 
   it('lists a user if there is one', function (done) {
-    this.models.User.create({ username: 'johndoe' }).then(function () {
-      request(app).get('/').expect(/johndoe/, done);
+    this.models.User.create({ username: 'varun' }).then(function () {
+      request(app).get('/').expect(/varun/, done);
     })
   });
 
   it('lists the tickets for the user if available', function (done) {
-    this.models.User.create({ username: 'johndoe' }).bind(this).then(function (user) {
-      return this.models.Task.create({ title: 'johndoe task', UserId: user.id });
+    this.models.User.create({ username: 'varun' }).bind(this).then(function (user) {
+      return this.models.Task.create({ title: 'varun task', UserId: user.id });
     }).then(function () {
-      request(app).get('/').expect(/johndoe task/, done);
+      request(app).get('/').expect(/varun task/, done);
     });
-  });
+  }); 
 });

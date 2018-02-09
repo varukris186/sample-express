@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.048" tests="3" failures="1">
+  <testsuite name="Root Suite" timestamp="2018-02-09T07:10:35" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="models/index" timestamp="2018-02-09T07:10:35" tests="2" file="C:\Users\vkumark\varun\sample-express\test\unit\index.test.js" failures="1" time="2.005">
+    <testcase name="models/index returns the task model" time="2.005" classname="returns the task model">
+      <failure><![CDATA[Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves.]]></failure>
+    </testcase>
+    <testcase name="models/index returns the user model" time="0" classname="returns the user model">
+    </testcase>
+  </testsuite>
+  <testsuite name="models/task" timestamp="2018-02-09T07:10:37" tests="0" file="C:\Users\vkumark\varun\sample-express\test\unit\task.test.js" failures="0" time="0">
+  </testsuite>
+  <testsuite name="create" timestamp="2018-02-09T07:10:37" tests="1" file="C:\Users\vkumark\varun\sample-express\test\unit\task.test.js" failures="0" time="0.043">
+    <testcase name="models/task create creates a task" time="0.043" classname="creates a task">
+    </testcase>
+  </testsuite>
+</testsuites>
